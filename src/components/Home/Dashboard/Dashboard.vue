@@ -16,7 +16,54 @@
             </div>
         </div>
         <div class="stats">
-
+            <div class="stat-item">
+                <div class="lobe">
+                    <img class="lobe-icon" src="../../../assets/images/lobe.png" alt="icon"/>
+                </div>
+                <div class="ico">
+                    <img class="dash-icons" src="../../../assets/images/productsDash.png" alt="icon"/>
+                </div>
+                <div class="stat-details">
+                    <div style="margin-top:10px" class="prod">Products</div>
+                    <div class="prod">3</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="lobe">
+                    <img class="lobe-icon" src="../../../assets/images/lobe.png" alt="icon"/>
+                </div>
+                <div class="ico">
+                    <img class="dash-icons" src="../../../assets/images/salesDash.png" alt="icon"/>
+                </div>
+                <div class="stat-details">
+                    <div style="margin-top:10px" class="prod">Sales</div>
+                    <div class="prod">#16,345.00</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="lobe">
+                    <img class="lobe-icon" src="../../../assets/images/lobe.png" alt="icon"/>
+                </div>
+                <div class="ico">
+                    <img class="dash-icons" src="../../../assets/images/postDash.png" alt="icon"/>
+                </div>
+                <div class="stat-details">
+                    <div style="margin-top:10px" class="prod">Posts</div>
+                    <div class="prod">177</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="lobe">
+                    <img class="lobe-icon" src="../../../assets/images/lobe.png" alt="icon"/>
+                </div>
+                <div class="ico">
+                    <img class="dash-icons" src="../../../assets/images/userDash.png" alt="icon"/>
+                </div>
+                <div class="stat-details">
+                    <div style="margin-top:10px" class="prod">Users</div>
+                    <div class="prod">107</div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
