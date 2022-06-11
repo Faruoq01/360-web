@@ -76,6 +76,90 @@
                 <input style="background:#fff; margin-left:5px; font-weight:500" class="input-search" type="text" placeholder="Search" />
             </div>
         </div>
+
+        <div class="list-feeds">
+            <div class="inner-feeds">
+                <div class="main-feed">
+                    <div class="feed-header">
+                        <div class="name-feed">
+                            <img style="border-radius:20px" class="user-icon" src="../../../assets/images/first.png" alt="icon"/>
+                            <div style="margin-left:10px">Moses Olaniyi</div>
+                        </div>
+                        <div class="date-text">Tue 24 May, 2022 04:01:22</div>
+                    </div>
+                    <div class="feed-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Faucibus et facilisis mi id ultrices. Tortor eleifend diam 
+                        ut aenean eget diam. Nullam et facilisi non venenatis. Molestie
+                        lectus facilisi sed laoreet faucibus.
+                    </div>
+                </div>
+
+                <div class="main-feed">
+                    <div class="feed-header">
+                        <div class="name-feed">
+                            <img style="border-radius:20px" class="user-icon" src="../../../assets/images/second.png" alt="icon"/>
+                            <div style="margin-left:10px">Julliet Chinwere</div>
+                        </div>
+                        <div class="date-text">Tue 24 May, 2022 04:01:22</div>
+                    </div>
+                    <div class="feed-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Faucibus et facilisis mi id ultrices. Tortor eleifend diam 
+                        ut aenean eget diam. Nullam et facilisi non venenatis. Molestie
+                        lectus facilisi sed laoreet faucibus.
+                    </div>
+                </div>
+
+                <div class="main-feed">
+                    <div class="feed-header">
+                        <div class="name-feed">
+                            <img style="border-radius:20px" class="user-icon" src="../../../assets/images/third.png" alt="icon"/>
+                            <div style="margin-left:10px">Super Admin</div>
+                        </div>
+                        <div class="date-text">Tue 24 May, 2022 04:01:22</div>
+                    </div>
+                    <div class="feed-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Faucibus et facilisis mi id ultrices. Tortor eleifend diam 
+                        ut aenean eget diam. Nullam et facilisi non venenatis. Molestie
+                        lectus facilisi sed laoreet faucibus.
+                    </div>
+                </div>
+
+                <div class="main-feed">
+                    <div class="feed-header">
+                        <div class="name-feed">
+                            <img style="border-radius:20px" class="user-icon" src="../../../assets/images/fourth.png" alt="icon"/>
+                            <div style="margin-left:10px">Moses Olaniyi</div>
+                        </div>
+                        <div class="date-text">Tue 24 May, 2022 04:01:22</div>
+                    </div>
+                    <div class="feed-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Faucibus et facilisis mi id ultrices. Tortor eleifend diam 
+                        ut aenean eget diam. Nullam et facilisi non venenatis. Molestie
+                        lectus facilisi sed laoreet faucibus.
+                    </div>
+                </div>
+
+                <div class="main-feed">
+                    <div class="feed-header">
+                        <div class="name-feed">
+                            <img style="border-radius:20px" class="user-icon" src="../../../assets/images/first.png" alt="icon"/>
+                            <div style="margin-left:10px">Moses Olaniyi</div>
+                        </div>
+                        <div class="date-text">Tue 24 May, 2022 04:01:22</div>
+                    </div>
+                    <div class="feed-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Faucibus et facilisis mi id ultrices. Tortor eleifend diam 
+                        ut aenean eget diam. Nullam et facilisi non venenatis. Molestie
+                        lectus facilisi sed laoreet faucibus.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
