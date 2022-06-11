@@ -1,10 +1,13 @@
 <script setup>
 import TheWelcome from '@/components/TheWelcome.vue'
+import SideBar from '@/components/Home/SideBar.vue'
 </script>
 
 <template>
   <div class="home-container">
-    <div class="side-bar">first</div>
+    <div class="side-bar">
+      <SideBar />
+    </div>
     <div class="main-content">second</div>
   </div>
 </template>
