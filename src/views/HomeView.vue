@@ -24,7 +24,7 @@ import SideBar from '@/components/Home/SideBar.vue'
   width: 15%;
   height: 100%;
   background-color: #404690;
-;
+  overflow: scroll;
 }
 
 .main-content{
