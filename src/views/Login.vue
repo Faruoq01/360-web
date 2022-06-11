@@ -1,6 +1,26 @@
 <template>
   <div class="about">
-    <div class="left-page">first</div>
+    <div class="left-page">
+      <div class="inner-left">
+        <div class="logos">
+          <img style="width:60px; height:65px; margin-top:20px" src="../assets/images/logo2.png" alt="icon" />
+        </div>
+        <div class="intro">
+          <div class="caros">
+            <img style="width:300px; height:200px" src="../assets/images/corousel1.png" alt="icon" />
+            <div class="tites">Business activities at your <span class="finger"> finger tips </span></div>
+            <div class="tex">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Lorem cras habitasse donec arcu enim eu, justo, nunc nulla. 
+              Mauris turpis ut est est quis sed praesent. Nulla integer 
+              risus dolor enim at nulla. Nunc non egestas vitae quis turpis 
+              ut est est quis sed praesent. Nulla integer risus dolor .
+            </div>
+          </div>
+        </div>
+        <div class="foot">Amabillstech.com . Technical Support . Terms & Condition . Privacy</div>
+      </div>
+    </div>
     <div class="right-page">
       <div class="first-shadow">
         <img style="width:150px; height:150px" src="../assets/images/elipse1.png" alt="icon" />
@@ -50,7 +70,10 @@
   .left-page{
     width: 50%;
     height: 100vh;
-    background-color: red
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .right-page{
@@ -176,6 +199,83 @@
     line-height: 23px;
     color: #1368D8;
     margin-top: 20px;
+  }
+
+  .inner-left{
+    width: 95%;
+    height: 95%;
+    background: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foot{
+    width: 100%;
+    height: 10%;
+    font-family: 'Nunito-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #404690;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caros{
+    width: 300px;
+    height: 350px;
+  }
+
+  .tites{
+    font-family: 'Nunito-regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #092C5A;
+    margin-top: 5px;
+  }
+
+  .finger{
+    font-family: 'Nunito-regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #0C6FF2;
+  }
+
+  .tex{
+    font-family: 'Nunito-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #092C5A;
+    margin-top: 11px;
   }
 }
 </style>
