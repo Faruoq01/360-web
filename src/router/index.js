@@ -7,15 +7,79 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      children: [
+        {
+          path: "/",
+          name: 'dashboard',
+          component: () => import('../components/Home/Dashboard/Dashboard.vue')
+        },
+        {
+          path: "/settings",
+          name: 'settings',
+          component: () => import('../components/Home/Dashboard/Settings.vue')
+        },
+        {
+          path: "/feeds",
+          name: 'feeds',
+          component: () => import('../components/Home/Dashboard/Feeds.vue')
+        },
+        {
+          path: "/user-management",
+          name: 'user',
+          component: () => import('../components/Home/Dashboard/UserManagement.vue')
+        },
+        {
+          path: "/contact-management",
+          name: 'contact',
+          component: () => import('../components/Home/Dashboard/ContactManagement.vue')
+        },
+        {
+          path: "/department",
+          name: 'department',
+          component: () => import('../components/Home/Dashboard/Departments.vue')
+        },
+        {
+          path: "/shedule",
+          name: 'schedule',
+          component: () => import('../components/Home/Dashboard/Schedule.vue')
+        },
+        {
+          path: "/inventory",
+          name: 'inventory',
+          component: () => import('../components/Home/Dashboard/Inventory.vue')
+        },
+        {
+          path: "/sales",
+          name: 'sales',
+          component: () => import('../components/Home/Dashboard/Sales.vue')
+        },
+        {
+          path: "/companies",
+          name: 'companies',
+          component: () => import('../components/Home/Dashboard/Companies.vue')
+        },
+        {
+          path: "/request",
+          name: 'request',
+          component: () => import('../components/Home/Dashboard/Requests.vue')
+        },
+        {
+          path: "/messaging",
+          name: 'messaging',
+          component: () => import('../components/Home/Dashboard/Messaging.vue')
+        },
+        {
+          path: "/conferencing",
+          name: 'conferencing',
+          component: () => import('../components/Home/Dashboard/Conferencing.vue')
+        },
+      ],
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/Login.vue')
     }
   ]
 })

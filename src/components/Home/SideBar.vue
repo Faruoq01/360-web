@@ -13,7 +13,7 @@
     <div class="item-container2">
         <div class="inner-container2">
             <img class="dash" src="../../assets/images/settings.png" />
-            <div class="dash-text2">Seetings</div>
+            <div class="dash-text2">Settings</div>
         </div>
     </div>
     <div class="item-container2">
@@ -114,6 +114,8 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'
+
 export default {
     data(){
         return{

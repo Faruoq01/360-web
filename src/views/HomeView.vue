@@ -2,6 +2,7 @@
 import TheWelcome from '@/components/TheWelcome.vue'
 import SideBar from '@/components/Home/SideBar.vue'
 import Dashboard from '@/components/Home/Dashboard/Dashboard.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import Dashboard from '@/components/Home/Dashboard/Dashboard.vue'
       <SideBar />
     </div>
     <div class="main-content">
-      <Dashboard />
+      <RouterView />
     </div>
   </div>
 </template>
