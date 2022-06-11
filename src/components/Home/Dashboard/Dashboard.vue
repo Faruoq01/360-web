@@ -65,6 +65,17 @@
                 </div>
             </div>
         </div>
+
+        <div class="search-feed">
+            <div class="left-side">
+                <img style="width:18px; height:15px" class="search-icon" src="../../../assets/images/meet.png" alt="icon"/>
+                <div class="texts">Recent General Feeds</div>
+            </div>
+            <div class="right-side">
+                <img style="width:18px; height:15px" class="search-icon" src="../../../assets/images/search.png" alt="icon"/>
+                <input style="background:#fff; margin-left:5px; font-weight:500" class="input-search" type="text" placeholder="Search" />
+            </div>
+        </div>
     </div>
 </template>
 
