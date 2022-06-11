@@ -1,6 +1,7 @@
 <script setup>
 import TheWelcome from '@/components/TheWelcome.vue'
 import SideBar from '@/components/Home/SideBar.vue'
+import Dashboard from '@/components/Home/Dashboard/Dashboard.vue'
 </script>
 
 <template>
@@ -8,7 +9,9 @@ import SideBar from '@/components/Home/SideBar.vue'
     <div class="side-bar">
       <SideBar />
     </div>
-    <div class="main-content">second</div>
+    <div class="main-content">
+      <Dashboard />
+    </div>
   </div>
 </template>
 
@@ -31,5 +34,8 @@ import SideBar from '@/components/Home/SideBar.vue'
   width: 85%;
   height: 100%;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
