@@ -3,7 +3,30 @@ import TheWelcome from '@/components/TheWelcome.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="home-container">
+    <div class="side-bar">first</div>
+    <div class="main-content">second</div>
+  </div>
 </template>
+
+<style scoped>
+.home-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-bar{
+  width: 15%;
+  height: 100%;
+  background-color: #404690;
+;
+}
+
+.main-content{
+  width: 85%;
+  height: 100%;
+  background-color: #fff;
+}
+</style>
