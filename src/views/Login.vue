@@ -39,7 +39,9 @@
               </div>
               <div style="color:#0C6FF2" class="me">Forgot password</div>
             </div>
-            <button class="login-button">Login</button>
+            <RouterLink class="router" to="/">
+              <button class="login-button">Login</button>
+            </RouterLink>
             <div class="footer">Don’t have a business account, Register</div>
           </div>
         </div>
@@ -52,6 +54,7 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'
 </script>
 
 
@@ -277,5 +280,6 @@
     color: #092C5A;
     margin-top: 11px;
   }
+
 }
 </style>

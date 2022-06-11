@@ -10,9 +10,11 @@
                     <img class="bell" src="../../../assets/images/bell.png" alt="icon"/>
                 </div>
                 <div class="name">Hi, Olayimika </div>
+                <RouterLink to="/login">
                 <div class="icon">
                     <img class="user-icon" src="../../../assets/images/first.png" alt="icon"/>
                 </div>
+                </RouterLink>
             </div>
         </div>
         <div class="stats">
