@@ -4,18 +4,25 @@
         <img class="logo" src="../../assets/images/logo.png" alt="logo" />
         <div class="org">360 Corporation</div>
     </div>
-    <div class="item-container">
-        <div class="inner-container">
-            <img class="dash" src="../../assets/images/dashIcon.png" />
-            <div class="dash-text">Dashboard</div>
+
+    <RouterLink class="route-style" to="/">
+        <div class=".item-container" v-bind:style="itemContainer">
+            <div class="inner-container">
+                <img class="dash" src="../../assets/images/dashIcon.png" />
+                <div class="dash-text">Dashboard</div>
+            </div>
         </div>
-    </div>
-    <div class="item-container2">
-        <div class="inner-container2">
-            <img class="dash" src="../../assets/images/settings.png" />
-            <div class="dash-text2">Settings</div>
+    </RouterLink>
+
+    <RouterLink class="route-style" to="/settings">
+        <div class="item-container2">
+            <div class="inner-container2">
+                <img class="dash" src="../../assets/images/settings.png" />
+                <div class="dash-text2">Settings</div>
+            </div>
         </div>
-    </div>
+    </RouterLink>
+
     <div class="item-container2">
         <div class="inner-container2">
             <img class="dash" src="../../assets/images/feeds.png" />
@@ -122,6 +129,16 @@ export default {
             userDrop:false,
             contactDrop:false,
             departmentDrop: false,
+
+            itemContainer: {
+                width: '100%',
+                height: '35px',
+                backgroundColor: '#232759',
+                marginTop: '30px',
+                display: 'flex',
+                alignItems: 'center',
+                color:'#58A0DF'
+            }
         }
     },
 
@@ -171,5 +188,10 @@ export default {
     line-height: 27px;
     color: #FFFFFF;
     margin-left: 5px;
+}
+
+.route-style{
+    width: 100%;
+    text-decoration: none;
 }
 </style>
