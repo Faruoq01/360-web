@@ -79,7 +79,34 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
-      component: () => import('../views/Login.vue')
+      component: () => import('../views/Login.vue'),
+      children: [
+        {
+          path: "/login",
+          name: 'login-pane',
+          component: () => import('../components/Login/LoginPane.vue')
+        },
+        {
+          path: "/register",
+          name: 'register',
+          component: () => import('../components/Login/Register.vue')
+        },
+        {
+          path: "/forgot-password",
+          name: 'forgot',
+          component: () => import('../components/Login/ForgotPassword.vue')
+        },
+        {
+          path: "/password-mail",
+          name: 'pass-mail',
+          component: () => import('../components/Login/PassNotification.vue')
+        },
+        {
+          path: "/reset-pass",
+          name: 'reset-pass',
+          component: () => import('../components/Login/ResetPassword.vue')
+        },
+      ],
     }
   ]
 })
