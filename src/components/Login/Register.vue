@@ -71,7 +71,7 @@
                             State
                         </div>
                         <div class="top-input">
-                            <select id="text-style" style="width:84%; border: none">
+                            <select class="text-style" style="width:84%; border: none">
                                 <option>Select state</option>
                                 <option>option 1</option>
                                 <option>option 1</option>
@@ -98,7 +98,7 @@
                             Password
                         </div>
                         <div class="top-input">
-                            <input id="text-style" style="width:84%; border: none; background:#fff" :type="updatePasswordType" />
+                            <input class="text-style" style="width:84%; border: none; background:#fff" :type="updatePasswordType" />
                             <img @click="toggleEye" v-if="passwordEye" style="width:15px; height:15px" src="../../assets/images/show.png" alt="icon" />
                             <img @click="toggleEye" v-else style="width:15px; height:15px" src="../../assets/images/hide.png" alt="icon" />
                         </div>
@@ -110,7 +110,7 @@
                             Confirm Password
                         </div>
                         <div class="top-input">
-                            <input id="text-style" style="width:84%; border: none; background:#fff" :type="updateConfirmPasswordType" />
+                            <input class="text-style" style="width:84%; border: none; background:#fff" :type="updateConfirmPasswordType" />
                             <img @click="toggleConfirmPassword" v-if="confirmPasswordEye" style="width:15px; height:15px" src="../../assets/images/show.png" alt="icon" />
                             <img @click="toggleConfirmPassword" v-else style="width:15px; height:15px" src="../../assets/images/hide.png" alt="icon" />
                         </div>
@@ -125,13 +125,20 @@
 
             <button class="register-button">Register</button>
 
-            <div class="reg-fott">Already have an account, Sign in</div>
+            <div class="reg-fott">Already have an account, 
+                <span>
+                    <RouterLink to="/login">
+                        Sign in
+                    </RouterLink>
+                </span>
+            </div>
 
         </div>
     </div>
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'
 export default {
     data(){
         return{
@@ -147,7 +154,7 @@ export default {
 
         toggleConfirmPassword(){
             this.confirmPasswordEye = !this.confirmPasswordEye;
-        }
+        },
     },
 
     computed:{
@@ -165,11 +172,10 @@ export default {
 
 <style scoped>
 .main-body{
-    width: 55%;
+    width: 90%;
     height: 570px;
     background: #FFFFFF;
     border-radius: 11px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,6 +238,8 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: 'Nunito-regular';
+    font-size: 12px;
 }
 
 #phone{
@@ -264,7 +272,7 @@ export default {
     outline: none;
 }
 
-#text-style{
+.text-style{
     width: 100%;
     border: none;
     margin-left: 5px;
@@ -317,10 +325,17 @@ select{
 .reg-fott{
     font-family: 'Nunito-regular';
     font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 19px;
     color: #006EFE;
     margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #006EFE;
+    font-weight: 400;
+    font-size: 12px;
 }
 </style>

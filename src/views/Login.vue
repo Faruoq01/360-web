@@ -67,25 +67,27 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     height: 100vh;
     background: #404690;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .first-shadow{
-    width: 100%;
-    height: 20%;
+    width: 20%;
+    height: 100%;
   }
 
   .last-shadow{
-    width: 100%;
-    height: 20%;
+    width: 20%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
   }
 
   .login-pane{
-    width: 100%;
-    height: 60%;
+    width: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
