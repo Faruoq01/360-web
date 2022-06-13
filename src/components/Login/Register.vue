@@ -118,6 +118,15 @@
                 </div>
             </div>
 
+            <div class="terms"> 
+                <input type="checkbox" style="margin-top:5px" />
+                <div class="condition">By clicking, you agree to the Terms and Conditions set out by this site, including our Cookie Use.</div>
+            </div>
+
+            <button class="register-button">Register</button>
+
+            <div class="reg-fott">Already have an account, Sign in</div>
+
         </div>
     </div>
 </template>
@@ -156,8 +165,8 @@ export default {
 
 <style scoped>
 .main-body{
-    width: 60%;
-    height: 550px;
+    width: 55%;
+    height: 570px;
     background: #FFFFFF;
     border-radius: 11px;
     position: absolute;
@@ -168,7 +177,7 @@ export default {
 
 .inner-reg{
     width: 92%;
-    height: 94%;
+    height: 98%;
 }
 
 .login-title{
@@ -275,5 +284,43 @@ select{
 .sell{
     width:10px; 
     height:5px; 
+}
+
+.terms{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.condition{
+    font-family: 'Nunito-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    color: #1F2247;
+    margin-left: 10px;
+}
+
+.register-button{
+    width: 100%;
+    height:30px;
+    color: #fff;
+    background: #006EFE;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    font-family: 'Nunito-regular';
+    font-size: 14px;
+}
+
+.reg-fott{
+    font-family: 'Nunito-regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    color: #006EFE;
+    margin-top: 20px;
 }
 </style>
