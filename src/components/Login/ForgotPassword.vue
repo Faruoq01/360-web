@@ -12,7 +12,9 @@
 
             <input class="input-password" type="password" placeholder="Email Address" />
 
-            <button class="send">Send</button>
+            <RouterLink to="/password-mail" >
+                <button class="send">Send</button>
+            </RouterLink>
 
             <RouterLink to="/login">
                 <div class="foot">
