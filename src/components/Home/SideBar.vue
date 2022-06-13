@@ -6,7 +6,7 @@
     </div>
 
     <RouterLink class="route-style" to="/">
-        <div @click="dashboard" v-bind:style="activeStates.A? itemContainer: itemContainer2">
+        <div class="item-container2" @click="dashboard" v-bind:style="activeStates.A? itemContainer: itemContainer2">
             <div v-bind:style="activeStates.A? innerContainer: innerContainer2">
                 <img class="dash" src="../../assets/images/dashIcon.png" />
                 <div class="dash-text" :style="activeStates.A? dashText:dashText2">Dashboard</div>
@@ -15,7 +15,7 @@
     </RouterLink>
 
     <RouterLink class="route-style" to="/settings">
-        <div @click="settings" v-bind:style="activeStates.B? itemContainer: itemContainer2">
+        <div class="item-container2" @click="settings" v-bind:style="activeStates.B? itemContainer: itemContainer2">
             <div v-bind:style="activeStates.B? innerContainer: innerContainer2">
                 <img class="dash" src="../../assets/images/settings.png" />
                 <div class="dash-text2" :style="activeStates.B? dashText:dashText2">Settings</div>
@@ -23,100 +23,122 @@
         </div>
     </RouterLink>
 
-    <div @click="feeds" v-bind:style="activeStates.C? itemContainer: itemContainer2">
-        <div v-bind:style="activeStates.C? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/feeds.png" />
-            <div class="dash-text2" :style="activeStates.C? dashText:dashText2">Feeds</div>
+    <RouterLink class="route-style" to="/feeds">
+        <div class="item-container2" @click="feeds" v-bind:style="activeStates.C? itemContainer: itemContainer2">
+            <div v-bind:style="activeStates.C? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/feeds.png" />
+                <div class="dash-text2" :style="activeStates.C? dashText:dashText2">Feeds</div>
+            </div>
         </div>
-    </div>
+    </RouterLink>
 
-    <div @click="userDropAccordion" v-bind:style="activeStates.D? itemContainer: itemContainer2">
-        <div @click="user" v-bind:style="activeStates.D? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/user.png" />
-            <div class="dash-text2" :style="activeStates.D? dashText:dashText2">User Management</div>
-            <img class="dash-arrow" src="../../assets/images/arrowRight.png" />
+    <RouterLink class="route-style" to="/user-management">
+        <div @click="userDropAccordion" v-bind:style="activeStates.D? itemContainer: itemContainer2">
+            <div @click="user" v-bind:style="activeStates.D? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/user.png" />
+                <div class="dash-text2" :style="activeStates.D? dashText:dashText2">User Management</div>
+                <img class="dash-arrow" src="../../assets/images/arrowRight.png" />
+            </div>
         </div>
-    </div>
+    </RouterLink>
     <div v-if="userDrop" class="accordion">
         <div style="margin-top:5px" class="sub-modules">First item</div>
         <div class="sub-modules">Second item</div>
         <div class="sub-modules">Third item</div>
     </div>
 
-    <div @click="ContactDropAccordion" v-bind:style="activeStates.E? itemContainer: itemContainer2">
-        <div @click="contacts" v-bind:style="activeStates.E? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/contact.png" />
-            <div class="dash-text2" :style="activeStates.E? dashText:dashText2">Contact Management</div>
-            <img style="margin-left: 10%" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+    <RouterLink class="route-style" to="/contact-management">
+        <div @click="ContactDropAccordion" v-bind:style="activeStates.E? itemContainer: itemContainer2">
+            <div @click="contacts" v-bind:style="activeStates.E? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/contact.png" />
+                <div class="dash-text2" :style="activeStates.E? dashText:dashText2">Contact Management</div>
+                <img style="margin-left: 10%" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+            </div>
         </div>
-    </div>
+    </RouterLink>
     <div v-if="contactDrop" class="accordion">
         <div style="margin-top:5px" class="sub-modules">First item</div>
         <div class="sub-modules">Second item</div>
         <div class="sub-modules">Third item</div>
     </div>
 
-    <div @click="DepartmentDropAccordion" v-bind:style="activeStates.F? itemContainer: itemContainer2">
-        <div @click="departments" v-bind:style="activeStates.F? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/department.png" />
-            <div class="dash-text2" :style="activeStates.F? dashText:dashText2">Departments</div>
-            <img style="margin-left: 33%" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+    <RouterLink class="route-style" to="/department">
+        <div @click="DepartmentDropAccordion" v-bind:style="activeStates.F? itemContainer: itemContainer2">
+            <div @click="departments" v-bind:style="activeStates.F? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/department.png" />
+                <div class="dash-text2" :style="activeStates.F? dashText:dashText2">Departments</div>
+                <img style="margin-left: 33%" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+            </div>
         </div>
-    </div>
+    </RouterLink>
     <div v-if="departmentDrop" class="accordion">
         <div style="margin-top:5px" class="sub-modules">First item</div>
         <div class="sub-modules">Second item</div>
         <div class="sub-modules">Third item</div>
     </div>
 
-    <div @click="schedules" v-bind:style="activeStates.G? itemContainer: itemContainer2">
-        <div class="inner-container2" v-bind:style="activeStates.G? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/schedule.png" />
-            <div class="dash-text2" :style="activeStates.G? dashText:dashText2">Schedule & Reports</div>
+    <RouterLink class="route-style" to="/shedule">
+        <div @click="schedules" v-bind:style="activeStates.G? itemContainer: itemContainer2">
+            <div class="inner-container2" v-bind:style="activeStates.G? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/schedule.png" />
+                <div class="dash-text2" :style="activeStates.G? dashText:dashText2">Schedule & Reports</div>
+            </div>
         </div>
-    </div>
+    </RouterLink>
 
+    <RouterLink class="route-style" to="/inventory">
     <div @click="inventory" v-bind:style="activeStates.H? itemContainer: itemContainer2">
         <div class="inner-container2" v-bind:style="activeStates.H? innerContainer: innerContainer2"> 
             <img class="dash" src="../../assets/images/inventory.png" />
             <div class="dash-text2" :style="activeStates.H? dashText:dashText2">Inventory</div>
         </div>
     </div>
+    </RouterLink>
 
-    <div @click="sales" v-bind:style="activeStates.I? itemContainer: itemContainer2">
-        <div class="inner-container2" v-bind:style="activeStates.I? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/sales.png" />
-            <div class="dash-text2" :style="activeStates.I? dashText:dashText2">Sales & Payments</div>
+    <RouterLink class="route-style" to="/sales">
+        <div @click="sales" v-bind:style="activeStates.I? itemContainer: itemContainer2">
+            <div class="inner-container2" v-bind:style="activeStates.I? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/sales.png" />
+                <div class="dash-text2" :style="activeStates.I? dashText:dashText2">Sales & Payments</div>
+            </div>
         </div>
-    </div>
+    </RouterLink>
 
-    <div @click="companies" v-bind:style="activeStates.J? itemContainer: itemContainer2">
-        <div class="inner-container2" v-bind:style="activeStates.J? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/company.png" />
-            <div class="dash-text2" :style="activeStates.J? dashText:dashText2">Companies</div>
+    <RouterLink class="route-style" to="/companies">
+        <div @click="companies" v-bind:style="activeStates.J? itemContainer: itemContainer2">
+            <div class="inner-container2" v-bind:style="activeStates.J? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/company.png" />
+                <div class="dash-text2" :style="activeStates.J? dashText:dashText2">Companies</div>
+            </div>
         </div>
-    </div>
+    </RouterLink>
 
+    <RouterLink class="route-style" to="/request">
     <div @click="requests" v-bind:style="activeStates.K? itemContainer: itemContainer2">
         <div class="inner-container2" v-bind:style="activeStates.K? innerContainer: innerContainer2">
             <img class="dash" src="../../assets/images/request.png" />
             <div class="dash-text2" :style="activeStates.K? dashText:dashText2">Requests</div>
         </div>
     </div>
+    </RouterLink>
 
+    <RouterLink class="route-style" to="/messaging">
     <div @click="messaging" v-bind:style="activeStates.L? itemContainer: itemContainer2">
         <div class="inner-container2" v-bind:style="activeStates.L? innerContainer: innerContainer2">
             <img class="dash" src="../../assets/images/messaging.png" />
             <div class="dash-text2" :style="activeStates.L? dashText:dashText2">messaging</div>
         </div>
     </div>
+    </RouterLink>
 
-    <div @click="conference" v-bind:style="activeStates.M? itemContainer: itemContainer2">
-        <div class="inner-container2" v-bind:style="activeStates.M? innerContainer: innerContainer2">
-            <img class="dash" src="../../assets/images/conferencing.png" />
-            <div class="dash-text2" :style="activeStates.M? dashText:dashText2">Conferencing</div>
+    <RouterLink class="route-style" to="/conferencing">
+        <div @click="conference" v-bind:style="activeStates.M? itemContainer: itemContainer2">
+            <div class="inner-container2" v-bind:style="activeStates.M? innerContainer: innerContainer2">
+                <img class="dash" src="../../assets/images/conferencing.png" />
+                <div class="dash-text2" :style="activeStates.M? dashText:dashText2">Conferencing</div>
+            </div>
         </div>
-    </div>
+    </RouterLink>
   </div>
 </template>
 
