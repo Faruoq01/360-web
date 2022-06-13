@@ -12,9 +12,11 @@
 
             <div style="margin-top:10px" class="inner-text">
                 Didn’t receive the email? 
-                <span style="color:#2F80ED">
-                    Click to resend
-                </span>
+                <RouterLink to="/reset-pass">
+                    <span style="color:#2F80ED">
+                        Click to resend
+                    </span>
+                </RouterLink>
             </div>
 
             <RouterLink to="/login">
