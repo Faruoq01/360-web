@@ -108,12 +108,173 @@
                 </div>
 
                 <div class="table-row">
-                    <div style="padding-left: 30px;" class="columns">Name</div>
-                    <div class="columns">Username</div>
-                    <div class="columns">Email Address</div>
-                    <div class="columns2">Role</div>
-                    <div class="columns2">Status</div>
-                    <div class="columns2">Action</div>
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/exitDel.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/exitDel.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/good2.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/good2.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/exitDel.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/exitDel.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/good2.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/good2.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/exitDel.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div style="padding-left: 30px;" class="columns">Olamilekan Odun</div>
+                    <div class="columns">Olamilekan</div>
+                    <div class="columns">Olamilekanodun@gmail.com</div>
+                    <div class="columns2">Marketer</div>
+                    <div class="columns2">
+                        <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+                    </div>
+                    <div class="columns2">
+                        <div class="list-control">
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+                            <img style="width: 25px; height:25px" src="../../../assets/images/icons/good2.png" alt="icon" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,6 +350,15 @@
     .sell{
         width:10px; 
         height:5px; 
+    }
+
+    .list-control{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 </style>
