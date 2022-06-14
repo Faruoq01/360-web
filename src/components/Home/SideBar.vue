@@ -73,7 +73,7 @@
                 <img class="dash" v-if="activeStates.F" src="../../assets/images/icons/depWhite.png" />
                 <img class="dash" v-else src="../../assets/images/department.png" />
                 <div class="dash-text2" :style="activeStates.F? dashText:dashText2">Departments</div>
-                <img style="margin-left: 65px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+                <img style="margin-left: 72px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
             </div>
         </div>
     </RouterLink>
@@ -169,7 +169,7 @@ export default {
                 width: '100%',
                 height: '35px',
                 backgroundColor: '#232759',
-                marginTop: '10px',
+                marginTop: '15px',
                 display: 'flex',
                 alignItems: 'center',
                 color:'#58A0DF'
@@ -178,7 +178,7 @@ export default {
             itemContainer2: {
                 width: '100%',
                 height: '35px',
-                marginTop: '10px',
+                marginTop: '15px',
                 display: 'flex',
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -213,7 +213,8 @@ export default {
                 fontFamily: 'Nunito-regular',
                 fontStyle: 'normal',
                 fontWeight: '600',
-                fontSize: '12px',
+                fontSize: '14px',
+                lineHeight:'20px',
                 lineHeight: '25px',
                 color: '#58A0DF',
                 cursor: 'pointer',
@@ -224,7 +225,7 @@ export default {
                 fontFamily: 'Nunito-regular',
                 fontStyle: 'normal',
                 fontWeight: '600',
-                fontSize: '12px',
+                fontSize: '14px',
                 lineHeight: '25px',
                 color: '#fff',
                 cursor: 'pointer',
@@ -550,9 +551,11 @@ export default {
 }
 
 .logo-container{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -564,7 +567,7 @@ export default {
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 700;
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
     margin-left: 5px;

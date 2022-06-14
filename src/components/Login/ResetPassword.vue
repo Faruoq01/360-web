@@ -21,8 +21,8 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 .login-page{
-    width: 270px;
-    height: 290px;
+    width: 300px;
+    height: 300px;
     background: #FFFFFF;
     border-radius: 11px;
     display: flex;
@@ -39,7 +39,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     color: #1F2247;
 }
@@ -48,7 +48,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: #1F2247;
 }
 
@@ -65,7 +65,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     color: #414790;
 }

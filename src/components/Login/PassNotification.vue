@@ -36,8 +36,8 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 .main{
-    width: 250px;
-    height: 220px;
+    width: 350px;
+    height: 300px;
     background: #FFFFFF;
     border-radius: 11px;
     display: flex;
@@ -54,13 +54,14 @@ import { RouterLink } from 'vue-router'
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 30px;
 }
 
 .text{
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     color: #404690;
     margin-left: 10px;
@@ -70,10 +71,10 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     color: #404690;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .input-password{
@@ -89,7 +90,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     color: #414790;
 }
@@ -106,7 +107,7 @@ import { RouterLink } from 'vue-router'
 
 .foot{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

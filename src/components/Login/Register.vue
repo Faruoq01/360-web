@@ -1,7 +1,7 @@
 <template>
     <div class="main-body">
         <div class="inner-reg">
-            <div style="margin-top:10px" class="login-title">Register a business account</div>
+            <div style="margin-top:5%; line-height: 30px;" class="login-title">Register a business account</div>
             <div class="desc">Please enter your details.</div>
 
             <div class="container-input">
@@ -119,7 +119,7 @@
             </div>
 
             <div class="terms"> 
-                <input type="checkbox" style="margin-top:5px" />
+                <input type="checkbox" style="margin-top:10px" />
                 <div class="condition">By clicking, you agree to the Terms and Conditions set out by this site, including our Cookie Use.</div>
             </div>
 
@@ -172,8 +172,8 @@ export default {
 
 <style scoped>
 .main-body{
-    width: 90%;
-    height: 570px;
+    width: 100%;
+    height: 90vh;
     background: #FFFFFF;
     border-radius: 11px;
     display: flex;
@@ -190,7 +190,7 @@ export default {
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     color: #1F2247;
   }
@@ -199,13 +199,13 @@ export default {
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: #1F2247;
   }
 
 .container-input{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .container-input-double{
@@ -213,6 +213,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 3%;
 }
 
 .item{
@@ -223,7 +224,7 @@ export default {
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 20px;
     color: #1F2247;
 }
@@ -239,7 +240,7 @@ export default {
     flex-direction: row;
     align-items: center;
     font-family: 'Nunito-regular';
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #phone{
@@ -266,7 +267,7 @@ export default {
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 19px;
     color: #1F2247;
     outline: none;
@@ -279,7 +280,7 @@ export default {
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 19px;
     color: #1F2247;
     outline: none;
@@ -298,14 +299,14 @@ select{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .condition{
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 14px;
     color: #1F2247;
     margin-left: 10px;
 }
@@ -316,7 +317,7 @@ select{
     color: #fff;
     background: #006EFE;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 5%;
     border: none;
     font-family: 'Nunito-regular';
     font-size: 14px;
@@ -326,16 +327,16 @@ select{
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 19px;
     color: #006EFE;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 a{
     text-decoration: none;
     color: #006EFE;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
 }
 </style>

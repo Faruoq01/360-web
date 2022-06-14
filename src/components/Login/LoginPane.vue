@@ -34,8 +34,8 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
   .login-page{
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 400px;
     background: #FFFFFF;
     border-radius: 11px;
     display: flex;
@@ -52,23 +52,24 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 30px;
     color: #1F2247;
+    margin-top: 30px;
   }
 
   .desc{
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: #1F2247;
   }
 
   .inputs{
     width: 100%;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
     border: 1.09777px solid #1F2247;
     border-radius: 5px;
     padding-left: 10px;
@@ -79,7 +80,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: #1F2247;
   }
 
@@ -102,7 +103,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     color: #1F2247;
   }
@@ -114,7 +115,7 @@ import { RouterLink } from 'vue-router'
   .login-button{
     width: 100%;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
     background: #006EFE;
     border-radius: 5px;
     border: none;
@@ -127,10 +128,10 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 23px;
     color: #1368D8;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .finger{

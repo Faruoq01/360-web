@@ -7,7 +7,7 @@
         </div>
         <div class="intro">
           <div class="caros">
-            <img style="width:300px; height:200px" src="../assets/images/corousel1.png" alt="icon" />
+            <img style="width:350px; height:250px" src="../assets/images/corousel1.png" alt="icon" />
             <div class="tites">Business activities at your <span class="finger"> finger tips </span></div>
             <div class="tex">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -123,7 +123,7 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     color: #404690;
     display: flex;
@@ -132,28 +132,31 @@ import LoginPane from '@/components/Login/LoginPane.vue'
   }
 
   .caros{
-    width: 300px;
-    height: 350px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .tites{
+    width: 100%;
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 22px;
     letter-spacing: 0.01em;
     text-transform: capitalize;
     color: #092C5A;
-    margin-top: 5px;
+    margin-top: 30px;
   }
 
   .tex{
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 25px;
     text-transform: capitalize;
     color: #092C5A;
     margin-top: 11px;

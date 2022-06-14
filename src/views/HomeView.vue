@@ -1,7 +1,5 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
 import SideBar from '@/components/Home/SideBar.vue'
-import Dashboard from '@/components/Home/Dashboard/Dashboard.vue'
 import { RouterView } from 'vue-router'
 </script>
 
@@ -28,7 +26,8 @@ import { RouterView } from 'vue-router'
   width: 15%;
   height: 100%;
   background-color: #404690;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .main-content{

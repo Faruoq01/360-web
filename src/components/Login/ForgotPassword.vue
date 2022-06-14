@@ -33,8 +33,8 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 .main{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     background: #FFFFFF;
     border-radius: 11px;
     display: flex;
@@ -51,13 +51,14 @@ import { RouterLink } from 'vue-router'
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 10px;
 }
 
 .text{
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     color: #404690;
     margin-left: 10px;
@@ -67,7 +68,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     color: #404690;
     margin-top: 20px;
@@ -78,7 +79,7 @@ import { RouterLink } from 'vue-router'
     height: 30px;
     border: 1.09777px solid #404690;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-left: 10px;
 }
 
@@ -86,7 +87,7 @@ import { RouterLink } from 'vue-router'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     color: #414790;
 }
@@ -96,7 +97,7 @@ import { RouterLink } from 'vue-router'
     height: 30px;
     background: #006EFE;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 40px;
     border: none;
     color: #fff;
 }
