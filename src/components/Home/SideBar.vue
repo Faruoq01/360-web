@@ -41,7 +41,7 @@
                 <img class="dash" v-if="activeStates.D" src="../../assets/images/icons/userWhite.png" />
                 <img class="dash" v-else src="../../assets/images/user.png" />
                 <div class="dash-text2" :style="activeStates.D? dashText:dashText2">User Management</div>
-                <img style="margin-left:40px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+                <img style="margin-left:70px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
             </div>
         </div>
     </RouterLink>
@@ -55,7 +55,7 @@
                 <img class="dash" v-if="activeStates.E" src="../../assets/images/icons/contactWhite.png" />
                 <img class="dash" v-else src="../../assets/images/contact.png" />
                 <div class="dash-text2" :style="activeStates.E? dashText:dashText2">Contact Management</div>
-                <img style="margin-left: 22px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+                <img style="margin-left: 50px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
             </div>
         </div>
     </RouterLink>
@@ -71,7 +71,7 @@
                 <img class="dash" v-if="activeStates.F" src="../../assets/images/icons/depWhite.png" />
                 <img class="dash" v-else src="../../assets/images/department.png" />
                 <div class="dash-text2" :style="activeStates.F? dashText:dashText2">Departments</div>
-                <img style="margin-left: 72px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
+                <img style="margin-left: 100px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
             </div>
         </div>
     </RouterLink>

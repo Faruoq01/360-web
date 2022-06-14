@@ -47,7 +47,7 @@ export default{
 }
 
 .side-bar{
-  width: 15%;
+  width: 17%;
   height: 100%;
   background-color: #404690;
   overflow-y: scroll;
@@ -55,7 +55,7 @@ export default{
 }
 
 .main-content{
-  width: 85%;
+  width: 83%;
   height: 100%;
   background-color: #fff;
   display: flex;
