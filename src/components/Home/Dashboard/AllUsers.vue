@@ -24,7 +24,7 @@
                     <div class="user-name">
                         User List
                     </div>
-                    <button class="create">Create User</button>
+                    <button @click="createUserModal" class="create">Create User</button>
                 </div>
 
                 <div class="filter">
@@ -289,6 +289,22 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data(){
+        return{
+           
+        }
+    },
+
+    methods: {
+        createUserModal(){
+            this.$emit('create-user');
+        }
+    }
+}
+</script>
 
 <style scoped>
 @import '../../styles/dashboard.css';
