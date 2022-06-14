@@ -46,9 +46,7 @@
         </div>
     </RouterLink>
     <div v-if="userDrop" class="accordion">
-        <div style="margin-top:5px" class="sub-modules">First item</div>
-        <div class="sub-modules">Second item</div>
-        <div class="sub-modules">Third item</div>
+        <div style="margin-top:5px" class="sub-modules">All Users</div>
     </div>
 
     <RouterLink class="route-style" to="/contact-management">

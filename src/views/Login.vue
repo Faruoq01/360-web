@@ -118,7 +118,7 @@ import LoginPane from '@/components/Login/LoginPane.vue'
   }
 
   .foot{
-    width: 100%;
+    width: 60%;
     height: 10%;
     font-family: 'Nunito-regular';
     font-style: normal;
@@ -127,7 +127,7 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     line-height: 20px;
     color: #404690;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 

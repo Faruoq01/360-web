@@ -27,7 +27,7 @@ const router = createRouter({
         {
           path: "/user-management",
           name: 'user',
-          component: () => import('../components/Home/Dashboard/UserManagement.vue')
+          component: () => import('../components/Home/Dashboard/AllUsers.vue')
         },
         {
           path: "/contact-management",
