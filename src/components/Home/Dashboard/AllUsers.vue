@@ -278,6 +278,15 @@
                 </div>
             </div>
         </div>
+
+        <div class="footer">
+            <div class="info">Showing 1 to 10 of 38 entries</div>
+            <div class="nav">
+                <div class="prev">Previous</div>
+                <div class="display">1</div>
+                <div class="prev">Next</div>
+            </div>
+        </div>
     </div>
 </template>
 
