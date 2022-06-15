@@ -1,13 +1,15 @@
 <template>
   <div class="home-container">
     <div v-if="createUserModal" class="modal-container">
-      <CreateUserModal />
+      <CreateUserModal @close-create-modal="closeCreateModal" />
     </div>
     <div class="side-bar">
       <SideBar />
     </div>
     <div class="main-content">
-      <RouterView @create-user="openCreateUserModal" />
+      <RouterView 
+        @create-user="openCreateUserModal" 
+      />
     </div>
   </div>
 </template>
@@ -26,13 +28,17 @@ export default{
 
   data(){
     return{
-      createUserModal: false
+      createUserModal: false,
     }
   },
 
   methods:{
     openCreateUserModal(){
       this.createUserModal = true;
+    },
+
+    closeCreateModal(){
+      this.createUserModal = false;
     }
   }
 }
@@ -75,7 +81,7 @@ export default{
   z-index: 20;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
   align-items: center;
