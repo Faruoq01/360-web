@@ -1,6 +1,23 @@
 <template>
     <div class="user-container">
-        <div style="width:100%; height:30px; background-color:red">Hello</div>
+        <div class="search-bar">
+            <div class="search-container">
+                <img class="search-icon" src="../../../assets/images/search.png" alt="icon"/>
+                <input class="input-search" type="text" placeholder="Search" />
+            </div>
+            <div class="notes">
+                <div class="icon">
+                    <img class="bell" src="../../../assets/images/bell.png" alt="icon"/>
+                </div>
+                <div class="name">Hi, Olayimika </div>
+                <RouterLink to="/login">
+                <div class="icon">
+                    <img class="user-icon" src="../../../assets/images/first.png" alt="icon"/>
+                </div>
+                </RouterLink>
+            </div>
+        </div>
+
         <div class="main-user">
             <div class="inner-user">
                 <div class="top-header">
@@ -64,7 +81,7 @@
                 </div>
 
                 <div class="numbers">
-                    <p style="margin-right: 5px;">Show</p>
+                    <p style="margin-right: 5px; color:#ccc">Show</p>
                     <div>
                         <div class="container-input" style="width: 60px;">
                             <div class="top-input">
@@ -78,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <p style="margin-left: 5px;">entries</p>
+                    <p style="margin-left: 5px; color:#ccc">entries</p>
                 </div>
 
                 <div class="table-container">
@@ -295,8 +312,7 @@ export default {
 
 .user-container{
         width: 96%;
-        display: flex;
-        flex-direction: column;
+        padding-top: 160px;
     }
 
     .search-icon{

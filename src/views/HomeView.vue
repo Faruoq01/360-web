@@ -61,8 +61,9 @@ export default{
   min-width: 1000px;
   width: 83%;
   height: 100%;
-  background-color: #fff;
   display: flex;
+  background-color: #fff;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-y: scroll;
@@ -74,7 +75,7 @@ export default{
   z-index: 20;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0,0.5);
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
