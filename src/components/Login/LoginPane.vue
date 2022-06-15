@@ -7,7 +7,7 @@
       <input class="inputs" type="text" placeholder="Enter Your Password" />
       <div class="remember">
         <div class="check">
-          <input type="checkbox" />
+          <input class="check" type="checkbox" />
           <div style="margin-left:8px" class="me">Remember me</div>
         </div>
         <RouterLink class="router" to="/forgot-password">
@@ -143,5 +143,45 @@ import { RouterLink } from 'vue-router'
     letter-spacing: 0.01em;
     text-transform: capitalize;
     color: #0C6FF2;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .login-page{
+      width: 96%;
+      zoom: 450%;
+    }
+
+    .login-title{
+      font-size: 25px;
+    }
+    .desc{
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 5px;
+    }
+    .inputs{
+      height: 40px;
+    }
+    .inputs::placeholder{
+      font-size: 18px;
+    }
+    .me{
+      font-size: 14px;
+    }
+    .remeber{
+      margin-top: 10px;
+    }
+    input.check{
+      width: 20px;
+      height: 20px;
+    }
+    .login-button{
+      height: 40px;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+    .footer{
+      margin-top: 20px;
+    }
   }
 </style>
