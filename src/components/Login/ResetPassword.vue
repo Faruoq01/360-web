@@ -79,4 +79,11 @@ import { RouterLink } from 'vue-router'
     border: none;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+  .login-page{
+      zoom: 450%;
+      width: 96%;
+  }
+}
 </style>
