@@ -310,8 +310,7 @@ export default {
 @import '../../styles/dashboard.css';
 @import '../../styles/users.css';
 
-@media (max-width: 2000px) {
-   .user-container{
+.user-container{
         width: 96%;
         height: 94%;
     }
@@ -385,5 +384,4 @@ export default {
         justify-content: space-between;
         align-items: center;
     }
-}
 </style>

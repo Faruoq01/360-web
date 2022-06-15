@@ -47,6 +47,8 @@ export default{
 }
 
 .side-bar{
+  max-width: 230px;
+  min-width: 215px;
   width: 17%;
   height: 100%;
   background-color: #404690;
@@ -55,6 +57,8 @@ export default{
 }
 
 .main-content{
+  max-width: 1700px;
+  min-width: 1000px;
   width: 83%;
   height: 100%;
   background-color: #fff;
