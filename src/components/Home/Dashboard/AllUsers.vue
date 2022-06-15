@@ -1,23 +1,6 @@
 <template>
     <div class="user-container">
-        <div class="search-bar">
-            <div class="search-container">
-                <img class="search-icon" src="../../../assets/images/search.png" alt="icon"/>
-                <input class="input-search" type="text" placeholder="Search" />
-            </div>
-            <div class="notes">
-                <div class="icon">
-                    <img class="bell" src="../../../assets/images/bell.png" alt="icon"/>
-                </div>
-                <div class="name">Hi, Olayimika </div>
-                <RouterLink to="/login">
-                <div class="icon">
-                    <img class="user-icon" src="../../../assets/images/first.png" alt="icon"/>
-                </div>
-                </RouterLink>
-            </div>
-        </div>
-
+        <div style="width:100%; height:30px; background-color:red">Hello</div>
         <div class="main-user">
             <div class="inner-user">
                 <div class="top-header">
@@ -312,7 +295,8 @@ export default {
 
 .user-container{
         width: 96%;
-        height: 94%;
+        display: flex;
+        flex-direction: column;
     }
 
     .search-icon{

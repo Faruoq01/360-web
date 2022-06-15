@@ -12,6 +12,8 @@
 .inner-user{
     width: 96%;
     height: 94%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .top-header{
@@ -127,6 +129,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .nav{
