@@ -1,17 +1,17 @@
 <template>
     <div class="main-body">
         <div class="inner-reg">
-            <div style="margin-top:5%; line-height: 30px;" class="login-title">Register a business account</div>
-            <div class="desc">Please enter your details.</div>
+            <div style="margin-top:20px; line-height: 20px;" class="login-title">Register a business account</div>
+            <div style="font-size:11px; color: #1F2247">Please enter your details.</div>
 
-            <div class="container-input">
+            <div style="margin-top:10px;" class="container-input">
                 <div class="header">
                     Business Name
                 </div>
                 <input type="text" class="top-input" />
             </div>
 
-            <div class="container-input-double">
+            <div style="margin-top:5px;" class="container-input-double">
                 <div class="item">
                     <div class="container-input">
                         <div class="header">
@@ -51,7 +51,7 @@
 
             <div class="container-input">
                 <div class="header">
-                    Business Phone N0
+                    Business Phone no
                 </div>
                 <div id="phone" class="top-input" >
                     <div class="code">
@@ -172,8 +172,8 @@ export default {
 
 <style scoped>
 .main-body{
-    width: 100%;
-    height: 90vh;
+    width: 450px;
+    height: 600px;
     background: #FFFFFF;
     border-radius: 11px;
     display: flex;
@@ -205,7 +205,7 @@ export default {
 
 .container-input{
     width: 100%;
-    margin-top: 3%;
+    margin-top: 10px;
 }
 
 .container-input-double{
@@ -213,7 +213,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 3%;
+    margin-top: 10px;
 }
 
 .item{
@@ -225,7 +225,7 @@ export default {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 15px;
     color: #1F2247;
 }
 

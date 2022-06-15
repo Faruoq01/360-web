@@ -7,7 +7,7 @@
         </div>
         <div class="intro">
           <div class="caros">
-            <img style="width:350px; height:250px" src="../assets/images/corousel1.png" alt="icon" />
+            <img style="width:300px; height:200px" src="../assets/images/corousel1.png" alt="icon" />
             <div class="tites">Business activities at your <span class="finger"> finger tips </span></div>
             <div class="tex">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -22,14 +22,8 @@
       </div>
     </div>
     <div class="right-page">
-      <div class="first-shadow">
-        <img style="width:150px; height:150px" src="../assets/images/elipse1.png" alt="icon" />
-      </div>
       <div class="login-pane">
         <RouterView />
-      </div>
-      <div class="last-shadow">
-        <img style="width:150px; height:150px" src="../assets/images/elipse2.png" alt="icon" />
       </div>
     </div>
   </div>
@@ -65,28 +59,18 @@ import LoginPane from '@/components/Login/LoginPane.vue'
   .right-page{
     width: 50%;
     height: 100vh;
-    background: #404690;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
-
-  .first-shadow{
-    width: 20%;
-    height: 100%;
-  }
-
-  .last-shadow{
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    background: #404690;
+    background-image: url('../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .login-pane{
-    width: 60%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -123,7 +107,7 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     color: #404690;
     display: flex;
@@ -155,8 +139,8 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     font-family: 'Nunito-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 20px;
     text-transform: capitalize;
     color: #092C5A;
     margin-top: 11px;
