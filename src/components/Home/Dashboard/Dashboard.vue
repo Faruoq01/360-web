@@ -186,6 +186,7 @@ export default {
 .dashboard-container{
   width: 96%;
   height: 94%;
+  margin-top: 20px;
 }
 
 .search-icon{

@@ -169,7 +169,6 @@ export default{
 <style scoped>
  .settings-container {
     width: 96%;
-    height: 500px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
