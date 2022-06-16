@@ -237,7 +237,7 @@ export default {
             },
 
             activeStates:{
-                dashboard: true,
+                dashboard: false,
                 settings:false,
                 feeds:false,
                 user:false,

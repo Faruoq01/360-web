@@ -24,7 +24,7 @@
           <div class="user-name2">
             Departments
           </div>
-          <button @click="createUserModal" class="create2">Add Department</button>
+          <button @click="createDepartmentModal" class="create2">Add Department</button>
         </div>
 
         <div class="numbers">
@@ -149,6 +149,22 @@
     </div>
   </div>
 </template>
+
+<script>
+export default{
+  data(){
+    return{
+
+    }
+  },
+
+  methods:{
+    createDepartmentModal(){
+      this.$emit('add-department-modal');
+    }
+  }
+}
+</script>
 
 <style scoped>
  .settings-container {

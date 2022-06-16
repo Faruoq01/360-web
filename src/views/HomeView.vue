@@ -1,7 +1,8 @@
 <template>
   <div class="home-container">
-    <div v-if="createUserModal" class="modal-container">
-      <CreateUserModal @close-create-modal="closeCreateModal" />
+    <div v-if="createUserModal || addDepartment" class="modal-container">
+      <CreateUserModal v-if="createUserModal" @close-create-modal="closeCreateModal" />
+      <AddDepartmentModal v-if="addDepartment" @close-department-modal ="closeDepartmentModal" />
     </div>
     <div class="side-bar">
       <SideBar />
@@ -9,6 +10,7 @@
     <div class="main-content">
       <RouterView 
         @create-user="openCreateUserModal" 
+        @add-department-modal="openAddDepartment"
       />
     </div>
   </div>
@@ -17,18 +19,21 @@
 <script>
 import SideBar from '@/components/Home/SideBar.vue'
 import CreateUserModal from '../components/Modals/CreateUserModal.vue'
+import AddDepartmentModal from '../components/Modals/AddDepartmentModal.vue'
 import { RouterView } from 'vue-router'
 
 export default{
   components:{
     SideBar,
     CreateUserModal,
+    AddDepartmentModal,
     RouterView,
   },
 
   data(){
     return{
       createUserModal: false,
+      addDepartment: false,
     }
   },
 
@@ -39,6 +44,14 @@ export default{
 
     closeCreateModal(){
       this.createUserModal = false;
+    },
+
+    openAddDepartment(){
+      this.addDepartment = true;
+    },
+
+    closeDepartmentModal(){
+      this.addDepartment = false;
     }
   }
 }
