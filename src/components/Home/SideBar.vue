@@ -2,7 +2,7 @@
   <div class="item">
     <div style="margin-bottom:20px" class="logo-container">
         <img class="logo" src="../../assets/images/logo.png" alt="logo" />
-        <div v-resize-text="{ratio:1.3, minFontSize: '16px', maxFontSize: '30px', delay: 200}" class="org">360 Corporation</div>
+        <div class="org">360 Corporation</div>
     </div>
 
     <RouterLink class="route-style" to="/">
@@ -16,14 +16,19 @@
     </RouterLink>
 
     <RouterLink class="route-style" to="/settings">
-        <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" v-bind:style="activeStates.settings? itemContainer: itemContainer2">
+        <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" @click="settingsDropAccordion" v-bind:style="activeStates.settings? itemContainer: itemContainer2">
             <div v-bind:style="activeStates.settings? innerContainer: innerContainer2">
                 <img class="dash" v-if="activeStates.settings" src="../../assets/images/icons/setWhite.png" />
                 <img class="dash" v-else src="../../assets/images/settings.png" />
                 <div class="dash-text2" :style="activeStates.settings? dashText:dashText2">Settings</div>
+                <img style="margin-left: 115px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
             </div>
         </div>
     </RouterLink>
+    <div v-if="settingsDrop" class="accordion">
+        <div style="margin-top:5px" class="sub-modules">Department</div>
+        <div class="sub-modules">Branch</div>
+    </div>
 
     <RouterLink class="route-style" to="/feeds">
         <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" v-bind:style="activeStates.feeds? itemContainer: itemContainer2">
@@ -162,6 +167,7 @@ export default {
             userDrop:false,
             contactDrop:false,
             departmentDrop: false,
+            settingsDrop: false,
 
             itemContainer: {
                 width: '100%',
@@ -266,6 +272,10 @@ export default {
 
         DepartmentDropAccordion(){
             this.departmentDrop? this.departmentDrop = false: this.departmentDrop = true;
+        },
+
+        settingsDropAccordion(){
+            this.settingsDrop? this.settingsDrop = false: this.settingsDrop = true;
         },
 
         mouseEnter(e){

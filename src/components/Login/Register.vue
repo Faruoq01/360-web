@@ -339,11 +339,4 @@ a{
     font-weight: 400;
     font-size: 14px;
 }
-
-@media (max-width: 600px) {
-  .main-body{
-      zoom: 450%;
-      width: 96%;
-  }
-}
 </style>

@@ -35,7 +35,7 @@ const router = createRouter({
           component: () => import('../components/Home/Dashboard/ContactManagement.vue')
         },
         {
-          path: "/department",
+          path: "/departments",
           name: 'department',
           component: () => import('../components/Home/Dashboard/Departments.vue')
         },
@@ -60,7 +60,7 @@ const router = createRouter({
           component: () => import('../components/Home/Dashboard/Companies.vue')
         },
         {
-          path: "/request",
+          path: "/requests",
           name: 'request',
           component: () => import('../components/Home/Dashboard/Requests.vue')
         },

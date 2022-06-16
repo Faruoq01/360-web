@@ -116,11 +116,4 @@ import { RouterLink } from 'vue-router'
 a{
     text-decoration: none;
 }
-
-@media (max-width: 600px) {
-  .main{
-      zoom: 450%;
-      width: 96%;
-  }
-}
 </style>

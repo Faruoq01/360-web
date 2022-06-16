@@ -7,14 +7,6 @@ export default{
 
     }
   },
-
-  mounted(){
-    window.addEventListener('resize', ()=>{
-      let docs = document.querySelector(':root').style;
-      docs.setProperty('--vh', window.innerHeight/100 + 'px');
-      docs.setProperty('--vw', window.innerWidth/100 + 'px');
-    })
-  }
 }
 </script>
 
@@ -26,11 +18,9 @@ export default{
 @import '@/assets/base.css';
 
 #app{
-  width: calc(100* var(--vw)) ;
-  height: calc(100* var(--vh)) ;
+  width: 100vw ;
+  height: 100vh;
+  margin: 0 auto;
   background-color: black;
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }
 </style>

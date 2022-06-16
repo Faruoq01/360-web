@@ -23,7 +23,6 @@
     </div>
     <div class="right-page">
       <div class="login-pane">
-        <img class="mobile-logo" src="../assets/images/logo2.png" alt="icon" />
         <RouterView />
       </div>
     </div>
@@ -40,11 +39,9 @@ import LoginPane from '@/components/Login/LoginPane.vue'
 .about {
     max-width: 2000px;
     min-width: 1200px;
-    min-height: 100vh;
-    widows: 100%;
+    width: 100%;
     height: 100vh;
     background-color: #fff;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -154,7 +151,6 @@ import LoginPane from '@/components/Login/LoginPane.vue'
   .about{
     width: 100%;
     height: 100%;
-    background-color: yellow;
   }
 
   .left-page{
@@ -163,12 +159,10 @@ import LoginPane from '@/components/Login/LoginPane.vue'
 
   .right-page{
     width: 100%;
-    height: 100%;
-  }
-
-  .mobile-logo{
-    zoom: 120%;
-    margin-bottom: 150px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

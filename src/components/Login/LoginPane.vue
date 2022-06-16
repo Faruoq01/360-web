@@ -144,44 +144,4 @@ import { RouterLink } from 'vue-router'
     text-transform: capitalize;
     color: #0C6FF2;
   }
-
-  @media only screen and (max-width: 600px) {
-    .login-page{
-      width: 96%;
-      zoom: 450%;
-    }
-
-    .login-title{
-      font-size: 25px;
-    }
-    .desc{
-      font-size: 16px;
-      line-height: 20px;
-      margin-top: 5px;
-    }
-    .inputs{
-      height: 40px;
-    }
-    .inputs::placeholder{
-      font-size: 18px;
-    }
-    .me{
-      font-size: 14px;
-    }
-    .remeber{
-      margin-top: 10px;
-    }
-    input.check{
-      width: 20px;
-      height: 20px;
-    }
-    .login-button{
-      height: 40px;
-      font-size: 18px;
-      margin-top: 15px;
-    }
-    .footer{
-      margin-top: 20px;
-    }
-  }
 </style>
