@@ -15,11 +15,11 @@
         </div>
     </RouterLink>
 
-    <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" @click="settingsDropAccordion" v-bind:style="activeStates.settings? itemContainer: itemContainer2">
-        <div v-bind:style="activeStates.settings? innerContainer: innerContainer2">
-            <img class="dash" v-if="activeStates.settings" src="../../assets/images/icons/setWhite.png" />
-            <img class="dash" v-else src="../../assets/images/settings.png" />
-            <div class="dash-text2" :style="activeStates.settings? dashText:dashText2">Settings</div>
+    <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" @click="settingsDropAccordion" v-bind:style="activeStates.dashboard? itemContainer: itemContainer2">
+        <div  v-bind:style="activeStates.settings? innerContainer: innerContainer2">
+            <img class="dash" v-if="settingsDrop" src="../../assets/images/icons/setWhite.png" />
+            <img v-else class="dash" src="../../assets/images/settings.png" />
+            <div class="dash-text2" :style="settingsDrop? dashText:dashText2">Settings</div>
             <img style="margin-left: 115px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
         </div>
     </div>
@@ -236,6 +236,16 @@ export default {
                 color: '#fff',
                 cursor: 'pointer',
                 userSelect: 'none',
+            },
+
+            dropStyle:{
+                borderLeft: '5px solid #232759',
+                marginTop: '20px'
+            },
+
+            dropStyle2:{
+                borderLeft: 'transparent',
+                marginTop: '20px'
             },
 
             activeStates:{
