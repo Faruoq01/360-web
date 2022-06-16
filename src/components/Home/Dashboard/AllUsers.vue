@@ -312,7 +312,7 @@ export default {
 
 .user-container{
         width: 96%;
-        padding-top: 160px;
+        margin-top: 20px;
     }
 
     .search-icon{

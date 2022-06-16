@@ -70,7 +70,6 @@ export default{
   display: flex;
   background-color: #fff;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   overflow-y: scroll;
   overflow-x: hidden;
