@@ -1,8 +1,9 @@
 <template>
   <div class="home-container">
-    <div v-if="createUserModal || addDepartment" class="modal-container">
+    <div v-if="createUserModal || addDepartment || addBranch" class="modal-container">
       <CreateUserModal v-if="createUserModal" @close-create-modal="closeCreateModal" />
       <AddDepartmentModal v-if="addDepartment" @close-department-modal ="closeDepartmentModal" />
+      <BranchModal v-if="addBranch" @close-branch-modal ="closeBranchModal" />
     </div>
     <div class="side-bar">
       <SideBar />
@@ -11,6 +12,7 @@
       <RouterView 
         @create-user="openCreateUserModal" 
         @add-department-modal="openAddDepartment"
+        @add-branch-modal = "openBranch"
       />
     </div>
   </div>
@@ -20,6 +22,7 @@
 import SideBar from '@/components/Home/SideBar.vue'
 import CreateUserModal from '../components/Modals/CreateUserModal.vue'
 import AddDepartmentModal from '../components/Modals/AddDepartmentModal.vue'
+import BranchModal from '../components/Modals/BranchModal.vue'
 import { RouterView } from 'vue-router'
 
 export default{
@@ -27,6 +30,7 @@ export default{
     SideBar,
     CreateUserModal,
     AddDepartmentModal,
+    BranchModal,
     RouterView,
   },
 
@@ -34,6 +38,7 @@ export default{
     return{
       createUserModal: false,
       addDepartment: false,
+      addBranch: false,
     }
   },
 
@@ -52,7 +57,15 @@ export default{
 
     closeDepartmentModal(){
       this.addDepartment = false;
-    }
+    },
+
+    openBranch(){
+      this.addBranch = true;
+    },
+
+    closeBranchModal(){
+      this.addBranch = false;
+    },
   }
 }
 </script>

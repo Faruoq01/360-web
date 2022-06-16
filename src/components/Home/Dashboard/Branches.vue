@@ -22,9 +22,9 @@
       <div class="inner-user2">
         <div class="top-header2">
           <div class="user-name2">
-            Departments
+            Branch
           </div>
-          <button @click="createDepartmentModal" class="create2">Add Department</button>
+          <button @click="createBranchModal" class="create2">Add Branch</button>
         </div>
 
         <div class="numbers">
@@ -33,7 +33,7 @@
             <div class="container-input" style="width: 60px;">
               <div class="top-input">
                 <select class="text-style" style="width:25px; border: none; background: #F0F0F0; color: #58A0DF;">
-                  <option>10</option>
+                  <option>5</option>
                   <option> 1</option>
                   <option> 1</option>
                   <option> 1</option>
@@ -47,16 +47,15 @@
 
         <div class="table-container">
           <div style="padding-left: 30px;" class="columns">Department</div>
-          <div class="columns">Description</div>
+          <div class="columns2">Location</div>
           <div class="columns2">Status</div>
           <div class="columns2">Action</div>
         </div>
 
         <div class="table-row">
-          <div style="padding-left: 30px;" class="columns">Accounting</div>
-          <div style="margin-top:5px; margin-bottom:5px" class="columns">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem cras habitasse donec consectetur adipiscing
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
           </div>
           <div class="columns2">
             <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
@@ -70,10 +69,9 @@
         </div>
 
         <div class="table-row">
-          <div style="padding-left: 30px;" class="columns">Marketting</div>
-          <div style="margin-top:5px; margin-bottom:5px" class="columns">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem cras habitasse donec consectetur adipiscing
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
           </div>
           <div class="columns2">
             <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
@@ -87,10 +85,9 @@
         </div>
 
         <div class="table-row">
-          <div style="padding-left: 30px;" class="columns">HR</div>
-          <div style="margin-top:5px; margin-bottom:5px" class="columns">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem cras habitasse donec consectetur adipiscing
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
           </div>
           <div class="columns2">
             <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
@@ -104,10 +101,9 @@
         </div>
 
         <div class="table-row">
-          <div style="padding-left: 30px;" class="columns">Production</div>
-          <div style="margin-top:5px; margin-bottom:5px" class="columns">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem cras habitasse donec consectetur adipiscing
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
           </div>
           <div class="columns2">
             <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
@@ -121,10 +117,89 @@
         </div>
 
         <div class="table-row">
-          <div style="padding-left: 30px;" class="columns">Logistics</div>
-          <div style="margin-top:5px; margin-bottom:5px" class="columns">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem cras habitasse donec consectetur adipiscing
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
+          </div>
+          <div class="columns2">
+            <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+          </div>
+          <div class="columns2">
+            <div class="list-control">
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="table-row">
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
+          </div>
+          <div class="columns2">
+            <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+          </div>
+          <div class="columns2">
+            <div class="list-control">
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="table-row">
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
+          </div>
+          <div class="columns2">
+            <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+          </div>
+          <div class="columns2">
+            <div class="list-control">
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="table-row">
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
+          </div>
+          <div class="columns2">
+            <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+          </div>
+          <div class="columns2">
+            <div class="list-control">
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="table-row">
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
+          </div>
+          <div class="columns2">
+            <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
+          </div>
+          <div class="columns2">
+            <div class="list-control">
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/edit.png" alt="icon" />
+              <img style="width: 25px; height:25px" src="../../../assets/images/icons/delete.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="table-row">
+          <div style="padding-left: 30px;" class="columns">Amabills_One</div>
+          <div style="margin-top:5px; margin-bottom:5px" class="columns2">
+            Abuja branch
           </div>
           <div class="columns2">
             <img style="width: 20px; height:20px" src="../../../assets/images/icons/good.png" alt="icon" />
@@ -159,8 +234,8 @@ export default{
   },
 
   methods:{
-    createDepartmentModal(){
-      this.$emit('add-department-modal');
+    createBranchModal(){
+      this.$emit('add-branch-modal');
     }
   }
 }

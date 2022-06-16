@@ -20,6 +20,11 @@ const router = createRouter({
           component: () => import('../components/Home/Dashboard/Settings.vue')
         },
         {
+          path: "/branch",
+          name: 'branch',
+          component: () => import('../components/Home/Dashboard/Branches.vue')
+        },
+        {
           path: "/feeds",
           name: 'feeds',
           component: () => import('../components/Home/Dashboard/Feeds.vue')

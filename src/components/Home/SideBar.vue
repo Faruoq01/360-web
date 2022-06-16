@@ -15,19 +15,21 @@
         </div>
     </RouterLink>
 
-    <RouterLink class="route-style" to="/settings">
-        <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" @click="settingsDropAccordion" v-bind:style="activeStates.settings? itemContainer: itemContainer2">
-            <div v-bind:style="activeStates.settings? innerContainer: innerContainer2">
-                <img class="dash" v-if="activeStates.settings" src="../../assets/images/icons/setWhite.png" />
-                <img class="dash" v-else src="../../assets/images/settings.png" />
-                <div class="dash-text2" :style="activeStates.settings? dashText:dashText2">Settings</div>
-                <img style="margin-left: 115px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
-            </div>
+    <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" @click="settingsDropAccordion" v-bind:style="activeStates.settings? itemContainer: itemContainer2">
+        <div v-bind:style="activeStates.settings? innerContainer: innerContainer2">
+            <img class="dash" v-if="activeStates.settings" src="../../assets/images/icons/setWhite.png" />
+            <img class="dash" v-else src="../../assets/images/settings.png" />
+            <div class="dash-text2" :style="activeStates.settings? dashText:dashText2">Settings</div>
+            <img style="margin-left: 115px" class="dash-arrow" src="../../assets/images/arrowRight.png" />
         </div>
-    </RouterLink>
+    </div>
     <div v-if="settingsDrop" class="accordion">
-        <div style="margin-top:5px" class="sub-modules">Department</div>
-        <div class="sub-modules">Branch</div>
+        <RouterLink class="route-style" to="/settings">
+            <div style="margin-top:5px" class="sub-modules">Department</div>
+        </RouterLink>
+        <RouterLink class="route-style" to="/branch">
+            <div class="sub-modules">Branch</div>
+        </RouterLink>
     </div>
 
     <RouterLink class="route-style" to="/feeds">
