@@ -149,6 +149,8 @@ import LoginPane from '@/components/Login/LoginPane.vue'
 
 @media (max-width: 600px) {
   .about{
+    max-width: 100vw;
+    min-width: 100vw;
     width: 100%;
     height: 100%;
   }
@@ -158,11 +160,19 @@ import LoginPane from '@/components/Login/LoginPane.vue'
   }
 
   .right-page{
+    max-width: 100vw;
+    min-width: 100vw;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .login-pane{
+    max-width: 100vw;
+    min-width: 100vw;
+    width: 100vw;
   }
 }
 </style>
