@@ -1,29 +1,36 @@
 <template>
   <div class="about">
-    <div class="left-page">
-      <div class="inner-left">
-        <div class="logos">
-          <img style="width:60px; height:65px; margin-top:20px" src="../assets/images/logo2.png" alt="icon" />
-        </div>
-        <div class="intro">
-          <div class="caros">
-            <img style="width:300px; height:200px" src="../assets/images/corousel1.png" alt="icon" />
-            <div class="tites">Business activities at your <span class="finger"> finger tips </span></div>
-            <div class="tex">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Lorem cras habitasse donec arcu enim eu, justo, nunc nulla. 
-              Mauris turpis ut est est quis sed praesent. Nulla integer 
-              risus dolor enim at nulla. Nunc non egestas vitae quis turpis 
-              ut est est quis sed praesent. Nulla integer risus dolor .
+    <div class="page">
+      <div class="left-page">
+        <div class="inner-left">
+          <div class="logos">
+            <img style="width:60px; height:65px; margin-top:20px" src="../assets/images/logo2.png" alt="icon" />
+          </div>
+          <div class="intro">
+            <div class="caros">
+              <img style="width:300px; height:200px" src="../assets/images/corousel1.png" alt="icon" />
+              <div class="tites">Business activities at your <span class="finger"> finger tips </span></div>
+              <div class="tex">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem cras habitasse donec arcu enim eu, justo, nunc nulla. 
+                Mauris turpis ut est est quis sed praesent. Nulla integer 
+                risus dolor enim at nulla. Nunc non egestas vitae quis turpis 
+                ut est est quis sed praesent. Nulla integer risus dolor .
+              </div>
             </div>
           </div>
+          <div class="foot">Amabillstech.com . Technical Support . Terms & Condition . Privacy</div>
         </div>
-        <div class="foot">Amabillstech.com . Technical Support . Terms & Condition . Privacy</div>
       </div>
-    </div>
-    <div class="right-page">
-      <div class="login-pane">
-        <RouterView />
+      <div class="right-page">
+        <div :style="shiftLogo" class="logo-container2">
+            <img class="logo" src="../assets/images/logo.png" alt="logo" />
+            <div class="org">360 Corporation</div>
+        </div>
+        <div class="reserved">&copy; All Rights Reserved</div>
+        <div class="login-pane">
+          <RouterView />
+        </div>
       </div>
     </div>
   </div>
@@ -32,6 +39,24 @@
 <script>
 import { RouterView } from 'vue-router'
 import LoginPane from '@/components/Login/LoginPane.vue'
+
+export default{
+  data(){
+    return{
+      currentRoute:''
+    }
+  },
+  watch:{
+    '$route'(to){
+      this.currentRoute = to.name;   
+    }
+  },
+  computed:{
+    shiftLogo(){
+      return this.currentRoute === 'register'? {top: '1vh'}: {top: '10vh'};
+    }
+  }
+}
 </script>
 
 
@@ -44,7 +69,16 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     background-color: #fff;
     display: flex;
     align-items: center;
+    flex-direction: column;
+  }
+
+  .page{
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .left-page{
@@ -147,6 +181,14 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     margin-top: 11px;
   }
 
+  .logo-container2{
+    display: none;
+  }
+
+  .reserved{
+    display: none;
+  }
+
 @media (max-width: 600px) {
   .about{
     max-width: 100vw;
@@ -165,6 +207,7 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -173,6 +216,39 @@ import LoginPane from '@/components/Login/LoginPane.vue'
     max-width: 100vw;
     min-width: 100vw;
     width: 100vw;
+  }
+
+  .logo-container2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 30;
+    top: 10vh;
+}
+
+  .logo{
+    width: 40px;
+    height: 40px;
+  }
+
+  .org{
+    font-family: 'Nunito-regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-left: 5px;
+  }
+
+  .reserved{
+    display: block;
+    position: absolute;
+    z-index: 40;
+    top: 92vh;
   }
 }
 </style>

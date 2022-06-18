@@ -339,4 +339,10 @@ a{
     font-weight: 400;
     font-size: 14px;
 }
+
+@media (max-width: 600px) {
+    .main-body{
+        width: 95%;
+    }
+}
 </style>
