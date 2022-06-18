@@ -144,4 +144,10 @@ import { RouterLink } from 'vue-router'
     text-transform: capitalize;
     color: #0C6FF2;
   }
+
+  @media (max-width: 600px) {
+    .login-page{
+        width: 95%;
+    }
+}
 </style>
